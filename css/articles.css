@@ -1,0 +1,81 @@
+.articleHeader, .articleHeaderGit, .articleHeaderJS
+{
+    
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+
+.articleHeaderGit
+{
+    background-color: red;
+}
+
+.articleHeaderJS
+{
+    background-color: yellow;
+}
+
+.articleContent, .articleContentGit
+{
+    
+    font-size: 22px;
+    color:black;
+    width: 90%;
+    height: auto;
+    text-align: left;
+    margin-left: auto;
+    margin-right:auto;
+}
+.articleContentGit
+{
+    background-color: rgba(255,0,0,0.5);
+    color: whitesmoke;
+}
+
+.articleContentGit:hover
+{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+
+.boxArticleCsharp, .boxArticleJs, .boxBoxArticleGit
+{
+    
+    text-align: center;
+    border-radius: 10%;
+    margin-left: 5%;
+    margin-right: 0%;
+    height: 100px;
+    width: 18%;
+    font-size: 12px;
+    float: left;
+    padding: 40px 0px 20px 0px;
+}
+
+.boxArticleCsharp
+{
+    color: #ffffff;
+    background-color: blue;
+}
+
+.boxBoxArticleGit
+{
+    color: #ffffff;
+    background-color: red;
+  
+}
+
+.boxBoxArticleJs
+{
+    color: black;
+    background-color: yellow;
+}

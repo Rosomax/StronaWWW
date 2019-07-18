@@ -1,0 +1,188 @@
+body
+{
+    color: black;
+    background-color: white;
+    background-image: url(webback.jpg);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+a:link {
+    color:black;
+    }
+    a:visited {
+    color:lightgreen;
+    }
+    a:hover {
+    color: green;
+    } 
+
+.boxMenu, .boxMenuLeft, .boxMenuRight
+{
+    
+    text-align: center;
+    border-radius:  10%;
+    margin-left: 4%;
+    margin-right: 0%;
+    height: 250px;
+    width: 18%;
+    font-size: 100px;
+    float: left;
+    color: #ffffff;
+    background-color: red;
+    padding: 60px 20px;
+    margin-bottom: 1%;
+    
+
+}
+
+.boxMenuLeft
+{
+    background-color: blue;
+    margin-left: 6.5%;
+    
+}
+
+.boxMenuRight
+{
+    
+    background-color: yellow;
+    color: black;
+}
+
+.boxMenu:hover, .boxMenuLeft:hover, .boxMenuRight:hover
+{
+   cursor: pointer;
+   color:white;
+   background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 20%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 100) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+
+
+
+.center, .centerCsharp
+{
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 0.8%;
+    font-size: 50px;
+    background-color: rgba(0,0,132,0.25);
+    background-size: cover;
+    border-radius: 15%;
+}
+
+.centerCsharp:hover
+{
+    cursor: pointer;
+    color:white;
+    background-color: black;
+}
+
+.left-column 
+{
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+    margin-right: auto;
+    clear: both;
+    background: #ffffff;
+    background-color: rgba(0,0,132,0.25);
+    border-radius: 20%;
+    
+}
+
+.right-column
+{
+    width:  70%;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.footer
+{
+    clear: both;
+    
+    width: 90%;
+    font-size: 30px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;
+}
+
+#faceimg
+{
+    margin-left: 25%;
+    margin-right: 30%;
+    max-width: 50%;
+
+}
+    
+    
+
+
+.describe , .headleft
+{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    margin-left: 12%;
+}
+
+.headleft
+{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-left: 17%;
+    margin-bottom: 2%;
+}
+
+.centerContent , .downContent
+{
+    font-size: 32px;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bold;
+}
+
+.downContent
+{
+    font-size: 24px;
+    
+}
+
+.articleHeader
+{
+    
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    
+}
+
+.articleContent
+{
+    
+    font-size: 22px;
+    color:black;
+    width: 90%;
+    height: auto;
+    text-align: left;
+}

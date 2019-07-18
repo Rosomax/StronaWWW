@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>O c#</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/articles.css" type="text/css"/>
+    <script src="/js/showHiddenText.js"></script> 
+</head>
+<body>
+    <div class="centerCsharp" onclick="window.location.href='https://www.mbialek.prv.pl'"><b>Wróć do strony głównej</b></div>
+    <div class="articleHeaderGit" onClick="hs();"> 1. Czym jest system kontroli wersji git?</div>
+    <div class="articleContentGit" style="display:none">
+        Rozproszony system kontroli wersji. Stworzył go Linus Torvalds jako narzędzie wspomagające rozwój jądra Linux.<br> Git stanowi wolne
+         oprogramowanie i został opublikowany na licencji GNU GPL w wersji 2. <br>
+        Pierwsza wersja narzędzia Git została wydana 7 kwietnia 2005 roku, by zastąpić poprzednio używany w rozwoju Linuksa, 
+        niebędący wolnym oprogramowaniem, system kontroli wersji BitKeeper.
+        </div>
+        <script>
+         function hs() 
+    {
+        x=document.getElementsByClassName("articleContentGit")[0];
+        if(x.style.display == "none") x.style.display = "block";
+        else x.style.display = "none"
+     }
+     
+        </script>
+</body>
+
+<footer class="footer">
+    
+        
+    <div class="footer">&copy; Michał Białek 2019</div>
+
+</footer>
