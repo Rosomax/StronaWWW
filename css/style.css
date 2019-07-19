@@ -8,6 +8,27 @@ body
     font-size: 20px;
 }
 
+.mainHeader
+{
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 0.8%;
+    font-size: 40px;
+    background-color: rgba(0,0,132,0.25);
+    background-size: auto;
+    border-radius: 15%;
+    font-weight: bold;
+}
+
+header
+{
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right:auto;
+}
 a:link {
     color:black;
     }
@@ -67,17 +88,18 @@ a:link {
 
 
 
-.center, .centerCsharp
+.centerCsharp
 {
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right:auto;
-    margin-bottom: 0.8%;
+    
     font-size: 50px;
     background-color: rgba(0,0,132,0.25);
     background-size: cover;
     border-radius: 15%;
+    background-color: transparent;
 }
 
 .centerCsharp:hover

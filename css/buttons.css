@@ -1,5 +1,6 @@
 .button
 {
+    
     background-color: blue;
     border: none;
     color: white;
@@ -10,7 +11,59 @@
 
 }
 
-.button:hover
+.topButton
+{
+    display: inline-block;
+    border:red;  
+    border-radius: 10%;
+    background-color:  rgba(0,0,132,0.25);
+    color: black;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 23%;
+    margin-bottom: 1%;
+    text-align: center;
+    padding: 0.5%;
+
+}
+
+.topButton span 
+{
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.topButton span::before
+{
+
+    content: '>>>';
+    opacity: 0;
+    top:0;
+}
+.topButton span::after
+{
+
+    content: '<<<';
+    opacity: 0;
+    top:0;
+}
+
+
+
+.topButton:hover span::after
+{
+  opacity: 1;
+
+}
+.topButton:hover span::before
+{
+  opacity: 1;
+
+}
+
+.button:hover 
 {
 background-color: aqua;
 }
