@@ -18,9 +18,16 @@
     background-color: red;
 }
 
+.articleHeaderGit:hover
+{
+    cursor: pointer;
+    color: black;
+}
+
 .articleHeaderJS
 {
     background-color: yellow;
+    color: black;
 }
 
 .articleContent, .articleContentGit
@@ -40,12 +47,7 @@
     color: whitesmoke;
 }
 
-.articleContentGit:hover
-{
-    cursor: pointer;
-    background-color: #ffffff;
-    color: black;
-}
+
 
 .boxArticleCsharp, .boxArticleJs, .boxBoxArticleGit
 {

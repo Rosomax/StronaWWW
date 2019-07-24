@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/slider.css" type="text/css"/>
     <link rel="stylesheet" href="css/buttons.css" type="text/css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/slider.js"></script> 
     
     
@@ -15,7 +16,7 @@
 </head>
 <body  onload="showSlides();">
   <header>
-    <div class="mainHeader">Programmer for Programmers</div>
+    <div class="mainHeader"><i class="fa fa-terminal"></i> Programmer for Programmers <i class="fa fa-code"></i></div>
   </header>  
 <div class="slideshow-container">
 
@@ -49,15 +50,12 @@
        </div>  
 </div>
 <div class="left-column">
-        
-        <p class=headleft>O mnie:</p>
-        
+
 <img id="faceimg" src="images/Face.jpg"/>
 <p  class=headleft>Michał Białek</p>
-        <p  class=headleft>Mój Git hub</p>
-        <p  class=describe><a href="https://github.com/Rosomax" target="_self">KLIK</a></p>
-        <p  class=headleft>Napisz do mnie</p>
-        <p  class=describe><span>&#9993; </span><a href="mailto:m.biaek91@gmail.com">m.biaek91@gmail.com</a></p>
+        <button class="buttonLeftMenu" type="submit" clear="both"  onclick="window.open('https://github.com/Rosomax')">Mój GitHub <i class="fa fa-github-square"></i></button>
+        <button class="buttonLeftMenu" type="submit" clear="both"  onclick="window.location='mailto:m.biaek91@gmail.com'">Napisz do mnie <i class="fa fa-paper-plane"></i></button>
+        <button class="buttonLeftMenu" type="submit" clear="both"  onclick="window.open('files/mbCV.pdf')"> Pobierz moje CV<i class="fa fa-download"></i></button>
     </div>
     
     <br>
@@ -89,7 +87,7 @@
 </div>
     
 <div class="footer">
-        <button class="button" type="submit" clear="both" style="width: 100%" onclick="window.open('files/mbCV.pdf')"><i class="fa fa-download"></i>Pobierz moje CV</button><br>
+        
 </div>
     
     
@@ -100,3 +98,4 @@
         <div class="footer">&copy; Michał Białek 2019</div>
     
 </footer>
+</html>

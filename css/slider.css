@@ -9,6 +9,7 @@ img {vertical-align: middle;}
   margin-bottom: 1%;
   float: left;
   margin-top: 2.5%;
+  border: solid 3px black;
 }
 
 .imageInSlider

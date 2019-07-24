@@ -54,6 +54,7 @@ a:link {
     background-color: red;
     padding: 60px 20px;
     margin-bottom: 1%;
+    border: solid 3px black;
     
 
 }
@@ -119,6 +120,7 @@ a:link {
     background: #ffffff;
     background-color: rgba(0,0,132,0.25);
     border-radius: 20%;
+    border: solid 3px black;
     
 }
 
@@ -143,9 +145,11 @@ a:link {
 
 #faceimg
 {
+    margin-top: 3%;
     margin-left: 25%;
     margin-right: 30%;
     max-width: 50%;
+    border: solid 3px black;
 
 }
     
@@ -167,7 +171,7 @@ a:link {
     font-size: 32px;
     font-weight: bold;
     color: black;
-    margin-left: 17%;
+    margin-left: 15%;
     margin-bottom: 2%;
 }
 
@@ -208,3 +212,4 @@ a:link {
     height: auto;
     text-align: left;
 }
+
