@@ -1,0 +1,17 @@
+.sky{
+    height: 100vh;
+    background: url(AnimationPics/theend.png) no-repeat, url(AnimationPics/eagle.png) no-repeat, url(AnimationPics/hummingbitd.png) no-repeat,
+     url(AnimationPics/parot2.png) no-repeat, url(AnimationPics/parrot.png) no-repeat,url(AnimationPics/back.png) repeat;
+    background-size: auto 30% ,auto 20%, auto 15%, auto 20%, auto 22%, auto 21%;
+    background-position: top -400% left 50%,top 50% left -500%, top 40% left 10%, top 5% left 7%, top 80% left 7%,top 0% left 0%;
+    transition: all 13s ease;
+}
+
+.sky:hover
+{
+    background-position:top 40% left 50%, top 50% left 600%, top 40% left 150%, top 120% left 150%, top -15% left 140%,top -10% left -800%;
+}
+
+body {
+    margin: 0;  
+}

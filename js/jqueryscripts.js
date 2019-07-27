@@ -2,28 +2,28 @@ $(document).ready(function()
 {
     $("div.boxMenuLeft").click(function()
     {
-        $(this).animate({
-            width: "12%", height: "100px" ,borderWidth:"1px", 'font-size': "50px" , 'padding-top': "20px"
-        }, 1500, 
-        )
-        $("div.boxMenu").animate({
-                "margin-left":"10%"
-         }, 1500)   
-        console.log("kliknieto");
+        $(this).animate({ width: "0%", height: "0px", padding: "0", 'font-size': "0px",
+         "margin-right":"18%"}, 1500)
         setTimeout(function(){
             $(location).attr('href', 'csharp.html')
-        }, 1550)
-    
+        }, 1150)
+    });
+
+    $(".boxMenu").click(function()
+    {
+            $(this).animate({ width: "0%", height: "0px", padding: "0", 'font-size': "0px",
+             "margin-right":"18%"}, 1500)
+            setTimeout(function(){
+                $(location).attr('href', 'git.html')
+            }, 1010)
+    });
+
+    $(".boxMenuRight").click(function()
+    {
+            $(this).animate({ width: "0%", height: "0px", padding: "0", 'font-size': "0px",
+             "margin-right":"18%", "margin-bottom":"14.14%"}, 1500)
+            setTimeout(function(){
+                $(location).attr('href', 'js.html')
+            }, 1010)
     });
 });
-
-
-
-
-//$(location).attr('href', 'http://stackoverflow.com')
-
-
-///onclick="location.href='csharp.html';"$(this).fadeOut("slow");
-//        $(this)   $(location).attr('href', 'csharp.html')
-//Promise().done(function() {
- //   $(location).attr('href', 'csharp.html')
