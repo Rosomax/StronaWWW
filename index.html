@@ -1,96 +1,102 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Strona Główna - MB</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="css/slider.css" type="text/css"/>
-    <link rel="stylesheet" href="css/buttons.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/buttons.css" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="js/slider.js"></script> 
+
+    <script src="js/slider.js"></script>
 </head>
 
-<body  onload="showSlides();">
-  <header>
-    <div class="mainHeader"><i class="fa fa-terminal"></i> Programmer for Programmers <i class="fa fa-code"></i></div>
-  </header>  
-<div class="slideshow-container">
-
+<body onload="showSlides();">
+    <header>
+        <div class="mainHeader"><i class="fa fa-terminal"></i> Programmer for Programmers <i class="fa fa-code"></i>
+        </div>
+    </header>
+    <div class="slideshow-container">
         <div class="mySlides fade">
-           
-           <div class=imageInSlider>
-               <img src="images/csharp-slider.png" width=100% height="100%" >
+            <div class=imageInSlider>
+                <img src="images/csharp-slider.png" width=100% height="100%">
             </div>
         </div>
+        <div class="mySlides fade">
 
-       <div class="mySlides fade">
-           
-           <div class=imageInSlider>
-               <img src="images/js-slider.png" width=100% height="100%">
-           </div>
-        
+            <div class=imageInSlider>
+                <img src="images/js-slider.png" width=100% height="100%">
+            </div>
         </div>
+        <div class="mySlides fade">
 
-       <div class="mySlides fade">
-           
-           <div class=imageInSlider>
-               <img src="images/git-slider.jpg" width=100% height="100%">
-           </div>
-       </div>
-          
-       <div class="mySlides fade">
-          
-           <div class=imageInSlider>
-                   <img src="images/entity-slider.png" width=100% height="100%">
-           </div>
-       </div>  
-</div>
-<div class="left-column">
-
-<img id="faceimg" src="images/Face.jpg"/>
-<p  class=headleft>Michał Białek</p>
-        <button class="buttonLeftMenu" type="submit" clear="both"  onclick="window.open('https://github.com/Rosomax')">Mój GitHub <i class="fa fa-github-square"></i></button>
-        <button class="buttonLeftMenu" type="submit" clear="both"  onclick="window.location='mailto:m.biaek91@gmail.com'">Napisz do mnie <i class="fa fa-paper-plane"></i></button>
-        <button class="buttonLeftMenu" type="submit" clear="both"  onclick="window.open('files/mbCV.pdf')"> Pobierz moje CV<i class="fa fa-download"></i></button>
+            <div class=imageInSlider>
+                <img src="images/git-slider.jpg" width=100% height="100%">
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class=imageInSlider>
+                <img src="images/entity-slider.png" width=100% height="100%">
+            </div>
+        </div>
     </div>
-    
+    <div class="left-column">
+        <img id="faceimg" src="images/Face.jpg" />
+        <p class=headleft>Michał Białek</p>
+        <nav>
+            <button class="buttonLeftMenu" type="submit" clear="both"
+                onclick="window.open('https://github.com/Rosomax')">Mój GitHub <i
+                    class="fa fa-github-square"></i></button>
+            <button class="buttonLeftMenu" type="submit" clear="both"
+                onclick="window.location='mailto:m.biaek91@gmail.com'">Napisz do mnie <i
+                    class="fa fa-paper-plane"></i></button>
+            <button class="buttonLeftMenu" type="submit" clear="both" onclick="window.open('files/mbCV.pdf')"> Pobierz
+                moje CV<i class="fa fa-download"></i></button>
+        </nav>
+    </div>
     <br>
-
     <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
     </div>
     <div class="right-column">
-            <h1 class="centerContent"> Czym sie zajmuję:</h1>
-            <h3  class="centerContent">Zawodowo jak i prywatnie zajmuje się informatyką, moją pasją jest programowanie.</h3>
-        </div>
-    <div class="right-column">
-            <h1 class="centerContent"> Tutaj możesz poczytać moje wpisy na podane niżej tematy:</h1>
-            <h5 class="downContent">Kliknij w interesujący Cię temat</h5>
+        <section>
+            Zawodowo jak i prywatnie zajmuje się informatyką, moją pasją jest programowanie.<br><br>
+            Tutaj możesz poczytać moje wpisy na podane niżej tematy:
+        </section>
     </div>
-    <div class="boxMenuLeft" >C#</div>
-    <div class="boxMenu" >.GIT</div>
-    <div class="boxMenuRight" >JS</div>
+    <nav>
+        <div class="boxMenuLeft">C#</div>
+        <div class="boxMenu">.GIT</div>
+        <div class="boxMenuRight">JS</div>
+    </nav>
     <br>
     <br>
-<div class="right-column">
-        <h4 class="downContent">Moje doświadczenie zawodowe to blisko 5 lat pracy w administrowaniu systemami serwerowymi, 
-                siecią intranet, tworzenie kopii zapasowych oraz  utrzymanie aplikacji kluczowych. Od ponad półtorej roku moje zainteresowania
-                 naukowe jak i prywatne są ściśle związane z programowaniem</h4>
-</div>
-    
-
-        
-</div>
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/jqueryscripts.js"></script>  
+    <div class="right-column">
+        <section id="downSection">
+            Moje doświadczenie zawodowe to blisko 5 lat pracy w administrowaniu systemami
+            serwerowymi,
+            siecią intranet, tworzenie kopii zapasowych oraz utrzymanie aplikacji kluczowych. Od ponad półtorej
+            roku
+            moje zainteresowania
+            naukowe jak i prywatne są ściśle związane z programowaniem
+        </section>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jqueryscripts.js"></script>
 </body>
 <footer class="footer">
-      &copy; Michał Białek 2019
+    &copy; Michał Białek 2019
 </footer>
+
 </html>
+<!DOCTYPE HTML>

@@ -1,7 +1,6 @@
-.buttonLeftMenu
-{
-    
-    color:black;
+.buttonLeftMenu {
+
+    color: black;
     background-color: white;
     cursor: pointer;
     font-size: 25px;
@@ -13,20 +12,18 @@
 
 }
 
-.buttonLeftMenu:hover
-{
-    color:white;
-    background-color:black;
+.buttonLeftMenu:hover {
+    color: white;
+    background-color: black;
     border: 4px solid white;
 }
 
 
-.topButton
-{
+.topButton {
     display: inline-block;
-    border:red;  
-    border-radius: 10%;
-    background-color:  rgba(0,0,132,0.25);
+    border: red;
+    border: 3px solid black;
+    background-color: rgba(0, 0, 132, 0.25);
     color: black;
     padding: 12px 30px;
     cursor: pointer;
@@ -38,49 +35,50 @@
 
 }
 
-.topButton span 
-{
+.topButton span {
     cursor: pointer;
     display: inline-block;
 
 }
 
-.topButton span::before
-{
+.topButton span::before {
 
     content: '>>>';
     opacity: 0;
-    top:0;
+    top: 0;
 }
-.topButton span::after
-{
+
+.topButton span::after {
 
     content: '<<<';
     opacity: 0;
-    top:0;
+    top: 0;
 }
 
 
 
-.topButton:hover span::after
-{
-  opacity: 1;
-
-}
-.topButton:hover span::before
-{
-  opacity: 1;
+.topButton:hover span::after {
+    opacity: 1;
 
 }
 
-.button:hover 
-{
-color:black;
+.topButton:hover span::before {
+    opacity: 1;
+
 }
 
-.gameButton
-{
-    color:black;
+.topButton:hover {
+    color: black;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, rgb(0, 46, 253) 15%, rgb(156, 192, 221) 33%, rgb(0, 46, 253) 45%, rgb(156, 192, 221) 66%, rgb(0, 46, 253) 100%);
+}
+
+.button:hover {
+    color: black;
+}
+
+.gameButton {
+    color: black;
     background-color: yellow;
     cursor: pointer;
     font-size: 38px;
@@ -93,9 +91,26 @@ color:black;
     border-radius: 2%;
 }
 
-.gameButton:hover
-{
-    color:darkblue;
+.gameButton:hover {
+    color: darkblue;
     background-color: white;
     border: 2px solid darkblue;
+}
+
+@media (orientation: portrait) {
+
+    .buttonLeftMenu {
+
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        font-size: 12px;
+        padding: 1px;
+        margin-left: 3%;
+        width: 50%;
+        height: 15%;
+        border: 2px solid black;
+        margin-bottom: 2%;
+
+    }
 }

@@ -1,6 +1,7 @@
-.articleHeader, .articleHeaderGit, .articleHeaderJS
-{
-    
+.articleHeader,
+.articleHeaderGit,
+.articleHeaderJS {
+
     font-size: 32px;
     font-weight: bold;
     color: white;
@@ -9,75 +10,70 @@
     height: auto;
     text-align: center;
     margin-left: auto;
-    margin-right:auto;
-    
+    margin-right: auto;
+
 }
 
-.articleHeaderGit
-{
+.articleHeaderGit {
     background-color: red;
 }
 
-.articleHeaderGit:hover
-{
+.articleHeaderGit:hover {
     cursor: pointer;
     color: black;
 }
 
-.articleHeaderJS
-{
+.articleHeaderJS {
     background-color: yellow;
     color: black;
 }
 
-.articleContent, .articleContentGit
-{
-    
+.articleContent,
+.articleContentGit {
+
     font-size: 22px;
-    color:black;
+    color: black;
     width: 90%;
     height: auto;
     text-align: left;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 }
-.articleContentGit
-{
-    background-color: rgba(255,0,0,0.5);
+
+.articleContentGit {
+    background-color: rgba(255, 0, 0, 0.5);
     color: whitesmoke;
 }
 
 
 
-.boxArticleCsharp, .boxArticleJs, .boxBoxArticleGit
-{
-    
+.boxArticleCsharp,
+.boxArticleJs,
+.boxBoxArticleGit {
+
     text-align: center;
     border-radius: 10%;
     margin-left: 5%;
-    margin-right: 0%;
-    height: 100px;
     width: 18%;
-    font-size: 12px;
-    float: left;
-    padding: 40px 0px 20px 0px;
+    font-size: 24px;
+    padding: 40px 0px 40px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 5px double black;
 }
 
-.boxArticleCsharp
-{
+.boxArticleCsharp {
     color: #ffffff;
     background-color: blue;
 }
 
-.boxBoxArticleGit
-{
+.boxBoxArticleGit {
     color: #ffffff;
     background-color: red;
-  
+
 }
 
-.boxBoxArticleJs
-{
+.boxBoxArticleJs {
     color: black;
     background-color: yellow;
 }
