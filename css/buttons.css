@@ -1,14 +1,16 @@
 .buttonLeftMenu {
 
+    position: relative;
     color: black;
     background-color: white;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 0.9vw;
     padding: 2px;
     margin-left: 20%;
     width: 63%;
     border: 4px solid black;
     margin-bottom: 3%;
+    transition: 1s;
 
 }
 
@@ -19,58 +21,48 @@
 }
 
 
+
+
 .topButton {
+    position: relative;
     display: inline-block;
-    border: red;
-    border: 3px solid black;
+    border: 1.5px solid black;
     background-color: rgba(0, 0, 132, 0.25);
     color: black;
     padding: 12px 30px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.5vw;
     width: 23%;
     margin-bottom: 1%;
     text-align: center;
     padding: 0.5%;
-
-}
-
-.topButton span {
     cursor: pointer;
-    display: inline-block;
+    transition: .4s .3s;
+    margin-top: 2px;
+}
+
+.topButton::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transition: .8s;
+    background-image: linear-gradient(45deg, rgb(0, 46, 253) 15%, rgb(156, 192, 221) 33%, rgb(0, 46, 253) 45%, rgb(156, 192, 221) 66%, rgb(0, 46, 253) 100%);
+    z-index: -1;
 
 }
 
-.topButton span::before {
+.topButton:hover::after {
 
-    content: '>>>';
-    opacity: 0;
-    top: 0;
-}
-
-.topButton span::after {
-
-    content: '<<<';
-    opacity: 0;
-    top: 0;
+    width: 100%;
 }
 
 
-
-.topButton:hover span::after {
-    opacity: 1;
-
-}
-
-.topButton:hover span::before {
-    opacity: 1;
-
-}
 
 .topButton:hover {
-    color: black;
-    cursor: pointer;
-    background-image: linear-gradient(45deg, rgb(0, 46, 253) 15%, rgb(156, 192, 221) 33%, rgb(0, 46, 253) 45%, rgb(156, 192, 221) 66%, rgb(0, 46, 253) 100%);
+    color: white;
 }
 
 .button:hover {
@@ -78,10 +70,12 @@
 }
 
 .gameButton {
+    top: 15%;
+    position: absolute;
     color: black;
     background-color: yellow;
     cursor: pointer;
-    font-size: 38px;
+    font-size: 2vw;
     padding: 2px;
     margin-left: 5%;
     width: 12%;
@@ -89,6 +83,11 @@
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 2%;
+    transition: .5s;
+}
+
+.gameButton:nth-of-type(2) {
+    left: 15%;
 }
 
 .gameButton:hover {
@@ -99,18 +98,39 @@
 
 @media (orientation: portrait) {
 
+    body {
+        height: 100%;
+
+    }
+
     .buttonLeftMenu {
 
         color: black;
         background-color: white;
         cursor: pointer;
-        font-size: 12px;
+        font-size: 1.5vw;
         padding: 1px;
         margin-left: 3%;
-        width: 50%;
+        width: 70%;
         height: 15%;
         border: 2px solid black;
         margin-bottom: 2%;
 
+    }
+
+    .gameButton {
+        height: 9%;
+        top: 12vw;
+        width: 90%;
+        left: 5%;
+        margin-left: 0;
+        font-size: 3.5vw;
+
+    }
+
+    .gameButton:nth-of-type(2) {
+        left: 5%;
+        top: 30vw;
+        margin-left: 0;
     }
 }

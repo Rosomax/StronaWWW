@@ -2,7 +2,10 @@
 .articleHeaderGit,
 .articleHeaderJS {
 
-    font-size: 32px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 2vw;
     font-weight: bold;
     color: white;
     background-color: blue;
@@ -50,12 +53,12 @@
 .boxArticleCsharp,
 .boxArticleJs,
 .boxBoxArticleGit {
-
+    position: absolute;
     text-align: center;
     border-radius: 10%;
-    margin-left: 5%;
+    left: 5%;
     width: 18%;
-    font-size: 24px;
+    font-size: 1.5vw;
     padding: 40px 0px 40px 0px;
     display: inline-block;
     vertical-align: middle;
@@ -63,8 +66,21 @@
 }
 
 .boxArticleCsharp {
+    top: 10%;
     color: #ffffff;
     background-color: blue;
+}
+
+.boxArticleCsharp:nth-of-type(2) {
+    left: 30%
+}
+
+.boxArticleCsharp:nth-of-type(3) {
+    left: 55%
+}
+
+.boxArticleCsharp:nth-of-type(4) {
+    left: 80%
 }
 
 .boxBoxArticleGit {
@@ -76,4 +92,45 @@
 .boxBoxArticleJs {
     color: black;
     background-color: yellow;
+}
+
+
+
+@media (orientation: portrait) {
+
+
+    .articleHeaderJS {
+        top: 10vw;
+        background-color: yellow;
+        color: black;
+    }
+
+    .boxArticleCsharp {
+        left: 5%;
+        width: 40vw;
+        height: 40vw;
+        top: 6%;
+        color: #ffffff;
+        background-color: blue;
+        padding: 10% 5%;
+        font-size: 5.5vw;
+    }
+
+    .boxArticleCsharp:nth-of-type(2) {
+        top: 6%;
+        left: 50%;
+
+    }
+
+    .boxArticleCsharp:nth-of-type(3) {
+        top: 60vw;
+        left: 5%;
+    }
+
+    .boxArticleCsharp:nth-of-type(4) {
+        top: 60vw;
+        left: 50%;
+    }
+
+
 }

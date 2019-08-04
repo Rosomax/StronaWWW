@@ -33,8 +33,8 @@ $(document).ready(function () {
             height: "0px",
             padding: "0",
             'font-size': "0px",
-            "margin-right": "18%",
-            "margin-bottom": "14.30%"
+            "margin-right": "18%"
+
         }, 1500)
         setTimeout(function () {
             $(location).attr('href', 'js.html')

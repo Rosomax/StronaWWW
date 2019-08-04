@@ -12,10 +12,11 @@ img {
 
 
 .slideshow-container {
+  position: absolute;
   margin-right: 0%;
   margin-left: 8.5%;
   margin-bottom: 1%;
-  float: left;
+  top: 8%;
   margin-top: 1.2%;
   border: solid 3px black;
 }
