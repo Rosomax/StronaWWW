@@ -23,7 +23,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.8%;
-    font-size: 3vw;
+    font-size: 2.7vw;
     background-color: rgba(0, 0, 1 32, 0.25);
     background-size: auto;
     border: 3px solid black;
@@ -63,6 +63,91 @@ section::first-letter {
     content: "";
     display: block;
     clear: both;
+}
+
+.flex {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    display: flex;
+    width: 90%;
+    border: black solid 1px;
+    flex-direction: row;
+}
+
+.m1,
+.m2,
+.m3,
+.m4,
+.m5,
+.m6 {
+    font-size: 25px;
+    flex-basis: 20%;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    border: black 1px solid;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.m1 {
+    background-color: navy;
+}
+
+.m1:hover {
+    background-image: linear-gradient(45deg, navy 15%, white 30%, navy 45%, white 60%, navy 75%, white 90%, navy 100%);
+    color: black;
+}
+
+.m2 {
+    background-color: blue;
+    color: black;
+}
+
+.m2:hover {
+    background-image: linear-gradient(45deg, blue 15%, white 30%, blue 45%, white 60%, blue 75%, white 90%, blue 100%);
+    color: white;
+}
+
+.m3 {
+    background-color: red;
+
+}
+
+.m3:hover {
+    background-image: linear-gradient(45deg, red 15%, white 30%, red 45%, white 60%, red 75%, white 90%, red 100%);
+    color: black;
+
+}
+
+.m4 {
+    background-color: yellow;
+    color: black;
+}
+
+.m4:hover {
+    background-image: linear-gradient(45deg, rgb(219, 134, 36) 15%, white 30%, rgb(219, 134, 36) 45%, white 60%, rgb(219, 134, 36) 75%, white 90%, rgb(219, 134, 36) 100%);
+    color: black;
+}
+
+.m5 {
+    background-color: darkslategrey;
+}
+
+.m5:hover {
+    background-image: linear-gradient(45deg, gray 15%, white 30%, gray 45%, white 60%, gray 75%, white 90%, gray 100%);
+    color: black;
+}
+
+.m6 {
+    background-color: lightskyblue;
+    color: black;
+}
+
+.m6:hover {
+    background-image: linear-gradient(45deg, cadetblue 15%, white 30%, cadetblue 45%, white 60%, cadetblue 75%, white 90%, cadetblue 100%);
+    color: black;
 }
 
 
@@ -164,7 +249,7 @@ a:hover {
 }
 
 .right-column {
-    top: 15%;
+    top: 20%;
     left: 30%;
     position: absolute;
     width: 65%;
@@ -292,7 +377,7 @@ a:hover {
 
     .left-column {
         position: absolute;
-        top: 10%;
+        top: 13%;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
@@ -316,7 +401,7 @@ a:hover {
 
     .footer {
         position: fixed;
-        bottom: 0.5%;
+        bottom: 1.5%;
         width: 90%;
         font-size: 10px;
         text-align: right;
@@ -342,5 +427,18 @@ a:hover {
         margin-top: 2%;
         font-size: 2vw;
         font-weight: bold;
+    }
+
+    .flex {
+        top: 5%;
+    }
+
+    .m1,
+    .m2,
+    .m3,
+    .m4,
+    .m5,
+    .m6 {
+        font-size: 12px;
     }
 }

@@ -70,7 +70,7 @@
 }
 
 .gameButton {
-    top: 15%;
+    top: 25%;
     position: absolute;
     color: black;
     background-color: yellow;
@@ -120,7 +120,7 @@
 
     .gameButton {
         height: 9%;
-        top: 12vw;
+        top: 20vw;
         width: 90%;
         left: 5%;
         margin-left: 0;
@@ -130,7 +130,7 @@
 
     .gameButton:nth-of-type(2) {
         left: 5%;
-        top: 30vw;
+        top: 40vw;
         margin-left: 0;
     }
 }
