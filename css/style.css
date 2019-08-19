@@ -65,6 +65,43 @@ section::first-letter {
     clear: both;
 }
 
+.flexColumn {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    display: flex;
+    width: 90%;
+    border: black solid 1px;
+    flex-direction: column;
+}
+
+
+
+.flexColumnTitle {
+    border: solid black 2px;
+    text-align: center;
+    font-size: 36px;
+
+}
+
+.flexColumnDescription {
+    border: solid black 2px;
+    font-size: 28px;
+    text-align: left;
+}
+
+.flexColumnImage {
+    flex-basis: 50%;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.flexImage {
+    max-width: 49.795%;
+}
+
 .flex {
     position: absolute;
     left: 5%;
@@ -440,5 +477,17 @@ a:hover {
     .m5,
     .m6 {
         font-size: 12px;
+    }
+
+    .flexColumnTitle {
+
+        font-size: 16px;
+
+    }
+
+    .flexColumnDescription {
+
+        font-size: 14px;
+
     }
 }
