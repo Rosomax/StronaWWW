@@ -8,9 +8,10 @@
     <title>O c#</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="css/articles.css" type="text/css" />
     <link rel="stylesheet" href="css/buttons.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -28,12 +29,27 @@
         <div class=m5 onclick="window.open('zrealizowaneProjekty.html','_self')">Zrealizowane Projekty</div>
         <div class=m6>Kontakt</div>
     </div>
+    <div class="changeColor">
+        <span class="changeColorText"> Zmień kolor tła</span>
+        <i class="fas fa-arrow-right"></i>
+        <div class="colorContainer">
+            <div class="color red"></div>
+            <div class="color blue"></div>
+            <div class="color yellow"></div>
+            <div class="color white"></div>
+            <div class="color orange"></div>
+            <div class="color brown"></div>
+        </div>
+    </div>
     <nav>
         <div class="boxArticleCsharp">1. Czym jest .net?</div>
         <div class="boxArticleCsharp">2. Operatory w C#</div>
         <div class="boxArticleCsharp">3. Instrukcje warunkowe</div>
         <div class="boxArticleCsharp">4. Pętle</div>
     </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jqueryscripts.js"></script>
+    <script src="js/changeColor.js"></script>
 </body>
 <footer class="footer">
     &copy; Michał Białek 2019

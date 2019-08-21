@@ -8,10 +8,10 @@
     <title>JavaScript</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="css/articles.css" type="text/css" />
     <link rel="stylesheet" href="css/buttons.css" type="text/css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -27,6 +27,18 @@
         <div class=m5 onclick="window.open('zrealizowaneProjekty.html','_self')">Zrealizowane Projekty</div>
         <div class=m6>Kontakt</div>
     </div>
+    <div class="changeColor">
+        <span class="changeColorText"> Zmień kolor tła</span>
+        <i class="fas fa-arrow-right"></i>
+        <div class="colorContainer">
+            <div class="color red"></div>
+            <div class="color blue"></div>
+            <div class="color yellow"></div>
+            <div class="color white"></div>
+            <div class="color orange"></div>
+            <div class="color brown"></div>
+        </div>
+    </div>
     <div class="articleHeaderJS">JavaScript</div>
     <nav>
         <button class="gameButton" type="submit" clear="both"
@@ -36,6 +48,9 @@
             onclick="window.open('animationBirds.html', '_self')">Animation<br> in CSS <i class="fa fa-cloud"
                 style="color:gray"></i></i></button>
     </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jqueryscripts.js"></script>
+    <script src="js/changeColor.js"></script>
 </body>
 <footer class="footer">
     &copy; Michał Białek 2019

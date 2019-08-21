@@ -8,9 +8,10 @@
     <title>O git słów kilka</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="css/articles.css" type="text/css" />
     <link rel="stylesheet" href="css/buttons.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -26,6 +27,18 @@
         <div class=m5 onclick="window.open('zrealizowaneProjekty.html','_self')">Zrealizowane Projekty</div>
         <div class=m6>Kontakt</div>
     </div>
+    <div class="changeColor">
+        <span class="changeColorText"> Zmień kolor tła</span>
+        <i class="fas fa-arrow-right"></i>
+        <div class="colorContainer">
+            <div class="color red"></div>
+            <div class="color blue"></div>
+            <div class="color yellow"></div>
+            <div class="color white"></div>
+            <div class="color orange"></div>
+            <div class="color brown"></div>
+        </div>
+    </div>
     <div class="articleHeaderGit" onClick="hs();"> 1. Czym jest system kontroli wersji git?</div>
     <div class="articleContentGit" style="display:none">
         Rozproszony system kontroli wersji. Stworzył go Linus Torvalds jako narzędzie wspomagające rozwój jądra
@@ -35,6 +48,9 @@
         Linuksa,
         niebędący wolnym oprogramowaniem, system kontroli wersji BitKeeper.
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jqueryscripts.js"></script>
+    <script src="js/changeColor.js"></script>
     <script src="js/showHiddenText.js"></script>
 </body>
 <footer class="footer">

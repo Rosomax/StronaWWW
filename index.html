@@ -8,15 +8,14 @@
     <title>Strona Główna - MB</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
     <link rel="stylesheet" href="css/slider.css" type="text/css" />
     <link rel="stylesheet" href="css/buttons.css" type="text/css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
-<body onload="showSlides();">
+<body>
     <header>
         <div class="mainHeader"><i class="fa fa-terminal"></i> Programmer for Programmers <i class="fa fa-code"></i>
         </div>
@@ -29,13 +28,24 @@
         <div class=m5 onclick="window.open('zrealizowaneProjekty.html','_self')">Zrealizowane Projekty</div>
         <div class=m6>Kontakt</div>
     </div>
+    <div class="changeColor">
+        <span class="changeColorText"> Zmień kolor tła</span>
+        <i class="fas fa-arrow-right"></i>
+        <div class="colorContainer">
+            <div class="color red"></div>
+            <div class="color blue"></div>
+            <div class="color yellow"></div>
+            <div class="color white"></div>
+            <div class="color orange"></div>
+            <div class="color brown"></div>
+        </div>
+    </div>
     <div class="left-column clearfix">
         <img id="faceimg" src="images/Face.jpg" />
         <p class=headleft>Michał Białek</p>
         <nav>
             <button class="buttonLeftMenu" type="submit" clear="both"
-                onclick="window.open('https://github.com/Rosomax')">Mój GitHub <i
-                    class="fa fa-github-square"></i></button>
+                onclick="window.open('https://github.com/Rosomax')">Mój GitHub <i class="fab fa-github"></i></button>
             <button class="buttonLeftMenu" type="submit" clear="both"
                 onclick="window.location='mailto:m.biaek91@gmail.com'">Napisz do mnie <i
                     class="fa fa-paper-plane"></i></button>
@@ -44,12 +54,6 @@
         </nav>
     </div>
     <br>
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
     </div>
     <div class="right-column">
         <section>
@@ -73,7 +77,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jqueryscripts.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/changeColor.js"></script>
 </body>
 <footer class="footer">
     &copy; Michał Białek 2019

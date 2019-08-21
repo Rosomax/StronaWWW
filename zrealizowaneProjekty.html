@@ -9,12 +9,11 @@
     <title>Zrealizowane Projekty</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="lib/lightBox/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/slider.css" type="text/css" />
     <link rel="stylesheet" href="css/buttons.css" type="text/css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -28,6 +27,18 @@
         <div class=m3 onclick="window.open('git.html','_self')">.Git</div>
         <div class=m4 onclick="window.open('js.html','_self')">JS</div>
         <div class=m6>Kontakt</div>
+    </div>
+    <div class="changeColor">
+        <span class="changeColorText"> Zmień kolor tła</span>
+        <i class="fas fa-arrow-right"></i>
+        <div class="colorContainer">
+            <div class="color red"></div>
+            <div class="color blue"></div>
+            <div class="color yellow"></div>
+            <div class="color white"></div>
+            <div class="color orange"></div>
+            <div class="color brown"></div>
+        </div>
     </div>
     <div class=flexColumn>
         <div class="flexColumnTitle"> 1.Learning Planner</div>
@@ -98,13 +109,20 @@
             </ul>
             <div class="flexColumnTitle"> Images</div>
             <div class="flexColumnImage">
-                <img src="./images/task.png" class="flexImage" alt="Tasks">
-                <img src="./images/completedtask.png" class="flexImage" alt="Completed Tasks">
-                <img src="./images/category.png" class="flexImage" alt="Category">
+                <a href="images/task.png" data-lightbox="Lp" data-title="Tasks" class="flexImage"><img
+                        src="images/thumb/taskT.png" class="flexImageC" alt="Tasks"></a>
+                <a href="images/completedtask.png" data-lightbox="Lp" data-title="Completed Task" class="flexImage"><img
+                        src="images/thumb/completedtaskT.png" class="flexImageC" alt="Completed Tasks"></a>
+                <a href="images/category.png" data-lightbox="Lp" data-title="Category" class="flexImage"><img
+                        src="images/thumb/categoryT.png" class="flexImageC" alt="Category"></a>
             </div>
 
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jqueryscripts.js"></script>
+    <script src="js/changeColor.js"></script>
+    <script src="lib/lightBox/js/lightbox.js"></script>
 </body>
 <footer>
 

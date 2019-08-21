@@ -91,15 +91,22 @@ section::first-letter {
 }
 
 .flexColumnImage {
-    flex-basis: 50%;
-    align-items: center;
+    display: flex;
+    /* flex-basis: 50%; */
+    /* align-items: center; */
     flex-wrap: wrap;
-    text-align: center;
-
+    /* text-align: center; */
 }
 
 .flexImage {
-    max-width: 49.795%;
+    max-width: 33%;
+    flex-grow: 1;
+    height: 33%;
+}
+
+.flexImageC {
+    max-width: 100%;
+    padding: 10px 15px;
 }
 
 .flex {
@@ -239,19 +246,19 @@ a:hover {
 .boxMenuLeft:hover {
     cursor: pointer;
     background: linear-gradient(45deg, rgb(42, 78, 243) 15%, rgb(107, 176, 233) 33%, rgb(42, 78, 243) 45%, rgb(107, 176, 233) 66%, rgb(42, 78, 243) 100%);
-    transform: rotate(360deg);
+    transform: scale(.5);
 }
 
 .boxMenu:hover {
     cursor: pointer;
     background: linear-gradient(45deg, rgb(255, 85, 85) 15%, rgb(240, 168, 168) 33%, rgb(255, 85, 85) 45%, rgb(240, 168, 168) 66%, rgb(255, 85, 85) 100%);
-    transform: rotate(360deg);
+    transform: scale(.5);
 }
 
 .boxMenuRight:hover {
     cursor: pointer;
     background: linear-gradient(45deg, rgb(255, 252, 87) 15%, rgb(236, 236, 215) 33%, rgb(255, 252, 87) 45%, rgb(236, 236, 215) 66%, rgb(255, 252, 87) 100%);
-    transform: rotate(360deg);
+    transform: scale(.5);
 }
 
 .centerCsharp {
@@ -321,6 +328,111 @@ a:hover {
     margin-left: 15%;
     font-size: 2vw;
     font-weight: bold;
+}
+
+.changeColor {
+    position: fixed;
+    height: 150px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    top: 40px;
+    left: 0;
+    transition: .6s linear;
+    z-index: 1;
+
+}
+
+
+
+.changeColor.on {
+    left: 150px;
+}
+
+.changeColorText {
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 20px 8px;
+    transition: 1s linear;
+}
+
+.fa-arrow-right {
+    position: fixed;
+    background-color: cadetblue;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 180px;
+    left: 20px;
+    transition: .6s linear;
+    cursor: pointer;
+}
+
+.fa-arrow-right.on {
+    transform: rotate(180deg);
+    left: 170px;
+}
+
+.colorContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    left: -150px;
+    top: 40px;
+    height: 150px;
+    width: 150px;
+    transition: .6s linear;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.colorContainer.on {
+    left: 0;
+}
+
+.color {
+    height: 30%;
+    width: 25%;
+    border-radius: 50%;
+    border: gray 1px solid;
+    cursor: pointer;
+    flex-basis: 30%;
+}
+
+.red {
+    background-color: red;
+    background-image: none;
+}
+
+.blue {
+    background-color: blue;
+    background-image: none;
+}
+
+.yellow {
+    background-color: yellow;
+    background-image: none;
+}
+
+.white {
+    background-color: white;
+    background-image: none;
+}
+
+.orange {
+    background-color: orange;
+    background-image: none;
+}
+
+.brown {
+    background-color: brown;
+    background-image: none;
 }
 
 @media (orientation: portrait) {
